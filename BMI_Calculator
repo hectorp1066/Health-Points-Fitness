@@ -1,0 +1,23 @@
+#BMI CALCULATOR
+
+print("Welcome to the Body Mass Index calculator!")
+weight = float(input("Please enter your weight in lbs:  "))
+height = float(input("Please enter your height in inches:  "))
+bmi = (weight/height**2) * 703
+
+def assignment():
+    print("Your body mass index is", round(bmi, 1))
+    print("You are in the", category, "category")
+
+if bmi < 18.5:
+    category = "Underweight"
+    assignment()
+elif 18.5 <= bmi < 25:
+    category = "Normal Weight"
+    assignment()
+elif 25 <= bmi < 30:
+    category = "Overweight"
+    assignment()
+elif bmi >= 30:
+    category = "Obese"
+    assignment()

@@ -1,0 +1,23 @@
+#WATER INTAKE CALCULATOR
+
+print("Welcome to the Daily Water Intake Calculator!")
+def water_calc():
+    second_calc = age_calc/28.3
+    oz_to_cups = round(second_calc / 8)
+    cups_to_bottles = round(oz_to_cups/2)
+    print("Your recommended daily water intake is", round(second_calc), "oz.")
+    print("That's", oz_to_cups, "cups of water a day!")
+    print("Or just", cups_to_bottles, "standard water bottles!")
+
+weight = float(input("Enter your weight in kgs:  "))
+age = int(input("Enter your age:  "))
+
+if age < 30:
+    age_calc = weight * 40
+    water_calc()
+elif 30 <= age < 55:
+    age_calc = weight * 35
+    water_calc()
+elif age >= 55:
+    age_calc = weight * 30
+    water_calc()

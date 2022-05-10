@@ -1,6 +1,6 @@
-#Basal Metabolic Rate Calculator
-#NASM BMR Formula (Mifflin St. Jeor Method)
+#Weight_Loss_Calculator
 
+print('Welcome to the Weight Loss Calculator!')
 age = float(input('Enter your age:  '))
 c_weight = float(input('Enter your current weight in lbs:  '))
 g_weight = float(input('Enter your goal weight in lbs:  '))

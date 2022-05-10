@@ -14,7 +14,7 @@ if sex == 'M':
 
 elif sex == 'F':
     bmr = (10 * weight_kg) + (6.25 * height) - (5 * age) - 161
-    print('Your Basal Metabolic Rate is', round(bmr, 2))
+    print('Your Basal Metabolic Rate (BMR) is', round(bmr, 2))
 
 else:
     print('Please input either M or F')
